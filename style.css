@@ -1,0 +1,23 @@
+.number {
+	width: 70px;
+	padding: 10px;
+	font-size: 36px;
+	color:blue;
+	text-align: center;
+}
+.button1 {
+	padding: 10px 30px;
+	font-size: 36px;
+	color:green;
+}
+.button2 {
+	padding: 10px 30px;
+	font-size: 36px;
+	color:red;
+}
+.title {
+	font-style: italic;
+}
+iframe {
+	display: none;
+}
