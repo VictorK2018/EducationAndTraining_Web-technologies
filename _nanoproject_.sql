@@ -3,12 +3,12 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2022 at 11:39 PM
+-- Generation Time: Jun 16, 2022 at 10:46 PM
 -- Server version: 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
 --
--- ApacheFriends XAMPP Version 7.3.5
+-- Web technologies
 --
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -39,6 +39,7 @@ CREATE TABLE `mytable` (
 --
 
 INSERT INTO `mytable` (`counter`) VALUES
+(0),
 (0),
 (0),
 (0),

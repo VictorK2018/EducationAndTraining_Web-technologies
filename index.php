@@ -1,5 +1,10 @@
+
 <?php
-	error_reporting( error_reporting() & ~E_NOTICE )
+// to display database value when open this file:
+	$dsn = "mysql:host=127.0.0.1;dbname=MYBASE;charset=UTF8";
+	$pdo = new PDO($dsn, "root", "");
+		$res = $pdo->query("SELECT counter FROM mytable");  
+		$counter = $res->fetch()[0];   
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +18,8 @@
 		<form method="post" target="plus" action="plus.php">
 			<input 	id="id_number" value="<?= $counter ?>"
 					class="number" type="text" /> 
-			<input 	name="submit" class="button1" type="submit" />
+			<input 	name="submit" class="button1" type="submit" value="Submit"
+			style="text-transform: capitalize; />
 		<!--	
 		    <input 	name="clear" class="button2" type="reset" />  
 		-->
